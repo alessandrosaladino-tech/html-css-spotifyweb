@@ -1,3 +1,4 @@
+/* COMMONS */
 * {
     margin: 0;
     padding: 0;
@@ -5,5 +6,92 @@
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;;
+    font-family: 'DM Sans', sans-serif;
 }
+
+:root {
+    --sp-sidebar: #000000;
+    --sp-main-primary: #141922;
+    --sp-main-secondary: #080b12;
+    --sp-main-bottom: #282828;
+    --sp-text-grey: #a3a3a3;
+    --sp-white: white;
+
+}
+
+/* END COMMONS */
+
+/* DEBUG */
+
+.debug .menu,
+.account {
+    background-color: red;
+    margin: 1rem;
+}
+
+.debug .account {
+    height: 100px;
+}
+
+.debug .menu {
+    height: 400px;
+}
+
+/* UTILITY */
+
+.d-flex {
+    display: flex;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+/* END UTILITY */
+
+/* MAIN */
+
+/* sidebar */
+.sidebar {
+    width: 230px;
+    height: calc(100vh - 90px);
+    background-color: var(--sp-sidebar);
+    color: var(--sp-white);
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 230px;
+}
+
+/* end sidebar */
+
+/* main part */
+
+/* upgrade */
+.upgrade {
+    height: 90px;
+    background-color: var(--sp-main-secondary);
+}
+
+/* upgrade */
+
+.main-part {
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-color: var(--sp-main-primary);
+}
+
+/* end main part */
+
+/* main-bottom */
+#main-bottom {
+     height: 90px;
+    background-color: var(--sp-main-bottom);
+}
+
+/* end main-bottom */
+
+/* END MAIN */
