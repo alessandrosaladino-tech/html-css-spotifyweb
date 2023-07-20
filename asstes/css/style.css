@@ -37,6 +37,20 @@ body {
     height: 400px;
 }
 
+.card-image {
+    position: relative
+}
+.play {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 /* END DEBUG */
 
 /* UTILITY */
@@ -133,7 +147,7 @@ body {
 
 /*------------------------------------------------*/
 /* content */
-.row .col-2>img {
+.row .col-2 .card-image>img {
     width: 100%;
 }
 
@@ -206,11 +220,35 @@ body {
 /* END MAIN */
 /*-----------------------------------------------------------------------------------------------------*/
 
+
+/* footer */
 #site-footer {
     height: 70px;
     background-color: var(--sp-main-bottom);
 }
 
+
+/* end footer */
+
+/* hover effects */
+
+.btn:hover {
+    width: 200px;
+    padding: 0.6rem;
+    font-size: 13px;
+}
+
+.content .sec-menu>a:hover {
+    color: var(--sp-white);
+}
+
+.card-image:hover img {
+    opacity: 0.3;
+}
+
+.card-image:hover .play {
+    opacity: 1;
+}
 
 /*-----------------------------------------------------------------------------------------------*/
 /* MEDIA QUERY */
