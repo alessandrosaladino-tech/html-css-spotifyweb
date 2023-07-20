@@ -106,6 +106,10 @@ body {
     width: 9%;
 }
 
+.al-cen {
+    align-items: center;
+}
+
 /* END UTILITY */
 
 
@@ -128,6 +132,10 @@ body {
 .logo>img {
     width: 145px;
     padding: 1rem;
+}
+
+.card-sidebar .al-cen>p {
+    padding-left: 0.3rem;
 }
 
 .row-sidebar {
@@ -195,16 +203,39 @@ body {
     background-color: var(--sp-text-grey);
     border-radius: 50%;
     color: white;
-    width: 20px;
-    position: relative;
+    width: 19px;
+    height: 19px;
+    justify-content: center;
+    align-items: start;
 }
 
-.user-img>img {
-    position: absolute;
+.user-img a>img {
+    width: 14px;
 }
 
+.user {
+    padding-top: 0.6rem;
+}
 
+.user a>h5 {
+    font-size: 12px;
+    padding-left: 0.6rem;
+}
 
+.user>a {
+    text-decoration: none;
+    color: var(--sp-white);
+}
+
+.sidebar-mobile {
+    display: none;
+    margin: 0.6rem;
+}
+
+.sidebar-mobile>img {
+    width: 30px;
+    padding-top: 0.6rem;
+}
 
 /* end sidebar */
 /*------------------------------------------------*/
@@ -329,7 +360,7 @@ body {
 /* end footer */
 
 /* hover effects */
-
+/*main part effects*/
 .btn:hover {
     width: 200px;
     padding: 0.6rem;
@@ -347,7 +378,20 @@ body {
 .card-image:hover .play {
     opacity: 1;
 }
+/*end main part effects*/
 
+/*sidebar effects*/
+.card-sidebar>a:hover {
+    color: var(--sp-white);
+}
+
+.btn-side:hover {
+    background-color: var(--sp-white);
+}
+
+.account .download-now>a:hover {
+    color: var(--sp-white);
+}
 /* end hover effects */
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -390,5 +434,13 @@ body {
 
     .sec-menu {
         width: 100%;
+    }
+
+    .menu, .account {
+        display: none;
+    }
+
+    .sidebar-mobile {
+        display: inline-block;
     }
 }
