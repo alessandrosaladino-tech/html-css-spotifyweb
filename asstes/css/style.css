@@ -21,7 +21,7 @@ body {
 
 /* END COMMONS */
 
-/* DEBUG */
+/* DEBUG *
 
 .debug .menu,
 .account {
@@ -36,10 +36,12 @@ body {
 .debug .menu {
     height: 400px;
 }
+*/
 
 .card-image {
     position: relative
 }
+
 .play {
     transition: .5s ease;
     opacity: 0;
@@ -54,6 +56,9 @@ body {
 /* END DEBUG */
 
 /* UTILITY */
+.d-inl {
+    display: inline;
+}
 
 .d-flex {
     display: flex;
@@ -80,6 +85,10 @@ body {
     margin-right: 0.4rem;
 }
 
+.a-items-c {
+    align-items: center;
+}
+
 .py-1 {
     padding: 1rem 0.5rem;
 }
@@ -87,6 +96,14 @@ body {
 .flx-end {
     justify-content: flex-end;
     align-items: center;
+}
+
+.p-left {
+    padding-left: 0.5rem;
+}
+
+.w-9 {
+    width: 9%;
 }
 
 /* END UTILITY */
@@ -107,6 +124,87 @@ body {
     justify-content: space-between;
     flex: 0 0 200px;
 }
+
+.logo>img {
+    width: 145px;
+    padding: 1rem;
+}
+
+.row-sidebar {
+    flex-direction: column;
+}
+
+.card-sidebar>a {
+    text-decoration: none;
+    color: var(--sp-text-grey);
+    padding: 0.1rem 1.2rem;
+}
+
+.card-sidebar a>img {
+    width: 10%;
+}
+
+.card-sidebar a>p {
+    font-size: 10px;
+}
+
+.row-sidebar>h5 {
+    padding: 1.2rem;
+    padding-bottom: 0;
+}
+
+.btn-side {
+    background-color: var(--sp-text-grey);
+    width: 30px;
+    height: 30px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0.2rem;
+
+}
+
+.row-sidebar .playlist>a {
+    font-size: 10px;
+    padding-top: 1rem;
+}
+
+.card-sidebar {
+    margin-top: 0.6rem;
+}
+
+.account {
+    width: 80%;
+    margin: auto;
+}
+
+.account .download-now>a {
+    color: var(--sp-text-grey);
+    text-decoration: none;
+    border-bottom: 1px solid var(--sp-text-grey);
+    padding-bottom: 0.6rem;
+    margin-top: 4rem;
+}
+
+.download {
+    padding-left: 0.6rem;
+    font-size: 10px;
+}
+
+.user-img {
+    background-color: var(--sp-text-grey);
+    border-radius: 50%;
+    color: white;
+    width: 20px;
+    position: relative;
+}
+
+.user-img>img {
+    position: absolute;
+}
+
+
+
 
 /* end sidebar */
 /*------------------------------------------------*/
@@ -249,6 +347,8 @@ body {
 .card-image:hover .play {
     opacity: 1;
 }
+
+/* end hover effects */
 
 /*-----------------------------------------------------------------------------------------------*/
 /* MEDIA QUERY */
