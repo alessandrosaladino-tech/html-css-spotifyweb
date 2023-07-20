@@ -54,14 +54,16 @@ body {
 }
 
 .btn {
-    padding: 0.5rem 1rem;
+    padding: 0.4rem;
     color: var(--sp-white);
     background-color: var(--sp-main-secondary);
     border-radius: 25px;
-    width: 18%;
+    width: 190px;
+    font-size: 12px;
     border: 1px solid white;
     text-decoration: none;
     text-align: center;
+    margin-right: 0.4rem;
 }
 
 .py-1 {
@@ -83,13 +85,13 @@ body {
 /*------------------------------------------------*/
 /* sidebar */
 .sidebar {
-    width: 230px;
-    height: calc(100vh - 90px);
+    width: 200px;
+    height: calc(100vh - 70px);
     background-color: var(--sp-sidebar);
     color: var(--sp-white);
     flex-direction: column;
     justify-content: space-between;
-    flex: 0 0 230px;
+    flex: 0 0 200px;
 }
 
 /* end sidebar */
@@ -101,7 +103,7 @@ body {
 /*------------------------------------------------*/
 /* upgrade */
 .upgrade {
-    height: 90px;
+    height: 70px;
     background-color: var(--sp-main-secondary);
 }
 
@@ -122,6 +124,7 @@ body {
     color: var(--sp-text-grey);
     text-decoration: none;
     padding: 0.7rem;
+    font-size: 11px;
 }
 
 /* end sec-menu */
@@ -152,14 +155,14 @@ body {
 .content .row .col-2>h3 {
     color: var(--sp-white);
     text-align: center;
-    font-size: 23px;
+    font-size: 18px;
     padding-top: 0.5rem;
 }
 
 .content .row .col-2>h5 {
     color: var(--sp-text-grey);
     text-align: center;
-    font-size: 18.5px;
+    font-size: 12px;
     padding-top: 0.2rem;
 }
 
@@ -188,7 +191,7 @@ body {
 
 .main-part {
     width: 100%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 70px);
     background-color: var(--sp-main-primary);
 }
 
@@ -200,33 +203,54 @@ body {
 /* ----------------------------------------------------------------------------------------------
 
 
+/* END MAIN */
+/*-----------------------------------------------------------------------------------------------------*/
 
-/* main-bottom */
-#main-bottom {
-    height: 90px;
+#site-footer {
+    height: 70px;
     background-color: var(--sp-main-bottom);
 }
 
-/* end main-bottom */
-
-/* END MAIN */
-/*-----------------------------------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------------------------*/
 /* MEDIA QUERY */
 
+/* media laptop */
+@media screen and (max-width: 980px) {
+    .col-lap-3 {
+        width: calc(100% / 12 * 3);
+    }
+
+    .sec-menu {
+        width: 90%;
+        line-height: 2.5rem;
+    }
+}
+
 
 /* media tablet */
 @media screen and (max-width: 780px) {
-       .col-t-6 {
+    .col-t-6 {
         width: calc(100% / 12 * 6);
-       }
+    }
+
+    .sec-menu {
+        line-height: 2rem;
+    }
 }
 
 
 /* media mobile */
 @media screen and (max-width: 480px) {
-       .col-m-6 {
+    .col-m-6 {
         width: calc(100% / 12 *6);
-       }
+    }
+
+    .sidebar {
+        flex: 0 0 50px;
+    }
+
+    .sec-menu {
+        width: 100%;
+    }
 }
