@@ -261,7 +261,7 @@ body {
 .content {
     flex: 1;
     overflow: auto;
-    height: calc(100% - 90px);
+    height: calc(100% - 70px);
 }
 
 .content .row .col-2>h3 {
