@@ -351,11 +351,80 @@ body {
 
 
 /* footer */
-#site-footer {
+.site-footer {
     height: 70px;
     background-color: var(--sp-main-bottom);
 }
 
+.left-footer{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+}
+.horror{
+    margin-left: 0.5rem;
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+}
+h6{
+    color: var(--sp-white);
+}
+
+.like {
+    margin-left: 1.2rem;
+}
+
+.name {
+    font-size: 10px;
+    color: var(--sp-text-grey);
+}
+.song {
+    margin: 0;
+}
+
+.like>a {
+   margin-left: 0.4rem;
+}
+
+.center-footer{
+    width: 50%;
+    height: 50px;
+}
+.player{
+    text-align: center;
+    margin-bottom: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+.player>a {
+    margin: 1rem;
+}
+.reproduction{
+    fill: #ffffff;
+    font-size: 40px;
+    padding: 0 1.5rem;
+}
+.bar {
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.timer{
+    color: #ffffff;
+}
+.right-footer{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-footer>a {
+    padding: 0.6rem;
+}
 
 /* end footer */
 
