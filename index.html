@@ -100,11 +100,22 @@
                     </div>
                 </div>
 
-                <div class="sidebar-mobile">
-                    <img src="./asstes/img/logo-small.svg" alt="">
-                    <img src="./asstes/img/home.svg" alt="">
-                    <img src="./asstes/img/search.svg" alt="">
-                    <img src="./asstes/img/libreria.svg" alt="">
+                <div class="sidebar-mobile ">
+                    <div class="sidebar-mobile-top">
+                        <img src="./asstes/img/logo-small.svg" alt="">
+                        <img src="./asstes/img/home.svg" alt="">
+                        <img src="./asstes/img/search.svg" alt="">
+                        <img src="./asstes/img/libreria.svg" alt="">
+                    </div>
+
+                    <div class="sidebar-mobile-bot d-flex">
+                        <div class="img-download">
+                            <img src="./asstes/img/download.svg" alt="">
+                        </div>
+                        <div class="user-img d-flex">
+                            <img src="./asstes/img/profile.svg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -266,7 +277,9 @@
             <img class="horror" src="./asstes/img/sinister.jpeg" alt="">
             <div class="song">
                 <h6 class="about">Sinister</h6>
-                <p class="name">Brano Nome</p>
+                <a class="txt-d-none" href="#">
+                    <p class="name">Brano Nome</p>
+                </a>
             </div>
             <div class="like">
                 <a style="text-decoration: none;" href="#">
@@ -297,7 +310,12 @@
             </div>
             <div class="bar d-flex">
                 <p class="timer">0:25</p>
-                <div class=""></div>
+                <a href="#">
+                    <div class="bar-player d-flex">
+                        <div class="bar-song"></div>
+                        <div class="ball"></div>
+                    </div>
+                </a>
                 <p class="timer">4:35</p>
             </div>
         </div>
@@ -311,9 +329,14 @@
             <a style="text-decoration: none;" href="#">
                 <i class="fa-solid fa-volume-high fa-sm" style="color: #ffffff;"></i>
             </a>
-            <div class="sound">
 
-            </div>
+            <a class="container-volume" href="#">
+                <div class="volume d-flex">
+                    <div class="control-volume"></div>
+                    <div class="ball"></div>
+                </div>
+            </a>
+
         </div>
     </footer>
     <!--End footer-->

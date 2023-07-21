@@ -110,6 +110,10 @@ body {
     align-items: center;
 }
 
+.txt-d-none {
+    text-decoration: none;
+}
+
 /* END UTILITY */
 
 
@@ -230,6 +234,7 @@ body {
 .sidebar-mobile {
     display: none;
     margin: 0.6rem;
+    height: 100%;
 }
 
 .sidebar-mobile>img {
@@ -237,6 +242,20 @@ body {
     padding-top: 0.6rem;
 }
 
+.sidebar-mobile-bot {
+    flex-direction: column;
+    margin-top: 560px;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-img>img {
+    width: 14px;
+}
+
+.img-download>img{
+    width: 20px;
+}
 /* end sidebar */
 /*------------------------------------------------*/
 
@@ -414,6 +433,7 @@ h6{
 }
 .timer{
     color: #ffffff;
+    font-size: 10px;
 }
 .right-footer{
     width: 25%;
@@ -424,6 +444,53 @@ h6{
 
 .right-footer>a {
     padding: 0.6rem;
+}
+
+.bar-player {
+    width: 100%;
+    height: 3px;
+    background-color: var(--sp-text-grey);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.bar-song {
+    width: 23%;
+    background-color: var(--sp-white);
+    height: 100%;
+    border-radius: 20px;
+}
+
+.bar>a {
+    width: 80%;
+}
+
+.volume {
+    background-color: var(--sp-text-grey);
+    border-radius: 20px;
+    height: 3px;
+    width: 100%;
+    margin-right: 0.6rem;
+    align-items: center;
+}
+
+.container-volume {
+    width: 40%;
+}
+
+.control-volume {
+    background-color: var(--sp-white);
+    border-radius: 20px;
+    height: 3px;
+    width: 25%;
+}
+
+.ball {
+    width: 11px;
+    height: 11px;
+    background-color: var(--sp-white);
+    border-radius: 50%;
+    display: none;
 }
 
 /* end footer */
@@ -459,6 +526,35 @@ h6{
 }
 
 .account .download-now>a:hover {
+    color: var(--sp-white);
+}
+
+.container-volume:hover .control-volume {
+    background-color: rgb(72, 184, 41);
+}
+
+.container-volume:hover .ball {
+    display: inline-block;
+}
+
+.bar-player:hover .bar-song {
+    background-color: rgb(72, 184, 41);
+}
+
+.bar-player:hover .ball {
+    display: inline-block;
+}
+
+.like>a:hover {
+    color: white;
+}
+
+.txt-d-none:hover {
+    text-decoration: underline;
+    color: var(--sp-white);
+}
+
+.name:hover {
     color: var(--sp-white);
 }
 /* end hover effects */
@@ -512,4 +608,6 @@ h6{
     .sidebar-mobile {
         display: inline-block;
     }
+
+
 }
