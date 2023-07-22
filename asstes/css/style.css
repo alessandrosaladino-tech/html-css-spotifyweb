@@ -118,6 +118,7 @@ body {
 .j-cont-cen {
     justify-content: center;
 }
+
 /* END UTILITY */
 
 
@@ -259,7 +260,7 @@ body {
     width: 14px;
 }
 
-.img-download>img{
+.img-download>img {
     width: 20px;
 }
 
@@ -395,20 +396,22 @@ body {
     background-color: var(--sp-main-bottom);
 }
 
-.left-footer{
+.left-footer {
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 13px;
 }
-.horror{
+
+.horror {
     margin-left: 0.5rem;
     height: 35px;
     width: 35px;
     object-fit: cover;
 }
-h6{
+
+h6 {
     color: var(--sp-white);
 }
 
@@ -420,19 +423,21 @@ h6{
     font-size: 10px;
     color: var(--sp-text-grey);
 }
+
 .song {
     margin: 0;
 }
 
 .like>a {
-   margin-left: 0.4rem;
+    margin-left: 0.4rem;
 }
 
-.center-footer{
+.center-footer {
     width: 50%;
     height: 50px;
 }
-.player{
+
+.player {
     text-align: center;
     margin-bottom: 0.7rem;
     margin-top: 0.5rem;
@@ -441,23 +446,27 @@ h6{
 .player>a {
     margin: 1rem;
 }
-.reproduction{
+
+.reproduction {
     fill: #ffffff;
     font-size: 40px;
     padding: 0 1.5rem;
 }
+
 .bar {
     margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
 }
-.timer{
+
+.timer {
     color: #ffffff;
     font-size: 10px;
     margin-left: 0.7rem;
     margin-right: 0.7rem;
 }
-.right-footer{
+
+.right-footer {
     width: 25%;
     display: flex;
     align-items: center;
@@ -536,6 +545,7 @@ h6{
 .card-image:hover .play {
     opacity: 1;
 }
+
 /*end main part effects*/
 
 /*sidebar effects*/
@@ -579,6 +589,7 @@ h6{
 .name:hover {
     color: var(--sp-white);
 }
+
 /* end hover effects */
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -623,7 +634,8 @@ h6{
         width: 100%;
     }
 
-    .menu, .account {
+    .menu,
+    .account {
         display: none;
     }
 
@@ -641,7 +653,7 @@ h6{
     }
 
     .left-footer {
-        gap:1px
+        gap: 1px
     }
 
     .like {
@@ -653,4 +665,11 @@ h6{
     }
 
 
+}
+
+@media screen and (max-height: 400px) {
+    .container-playlist {
+        overflow: auto;
+        height: 200px;
+    }
 }
