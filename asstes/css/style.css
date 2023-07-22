@@ -16,6 +16,7 @@ body {
     --sp-main-bottom: #282828;
     --sp-text-grey: #a3a3a3;
     --sp-white: white;
+    --sp-green: #adff2f;
 
 }
 
@@ -114,6 +115,9 @@ body {
     text-decoration: none;
 }
 
+.j-cont-cen {
+    justify-content: center;
+}
 /* END UTILITY */
 
 
@@ -187,7 +191,8 @@ body {
 
 .account {
     width: 80%;
-    margin: auto;
+    margin-left: 0.8rem;
+    margin-bottom: 0.2rem;
 }
 
 .account .download-now>a {
@@ -235,6 +240,8 @@ body {
     display: none;
     margin: 0.6rem;
     height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sidebar-mobile>img {
@@ -244,7 +251,6 @@ body {
 
 .sidebar-mobile-bot {
     flex-direction: column;
-    margin-top: 560px;
     align-items: center;
     justify-content: center;
 }
@@ -256,6 +262,16 @@ body {
 .img-download>img{
     width: 20px;
 }
+
+.img-download {
+    margin-bottom: 0.6rem;
+}
+
+.green-b {
+    border-left: 2px solid var(--sp-green);
+}
+
+
 /* end sidebar */
 /*------------------------------------------------*/
 
@@ -287,6 +303,10 @@ body {
     text-decoration: none;
     padding: 0.7rem;
     font-size: 11px;
+}
+
+.green {
+    border-bottom: 2px solid var(--sp-green);
 }
 
 /* end sec-menu */
@@ -428,12 +448,14 @@ h6{
 }
 .bar {
     margin-bottom: 2rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .timer{
     color: #ffffff;
     font-size: 10px;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
 }
 .right-footer{
     width: 25%;
@@ -443,7 +465,7 @@ h6{
 }
 
 .right-footer>a {
-    padding: 0.6rem;
+    padding: 0.3rem;
 }
 
 .bar-player {
@@ -462,7 +484,7 @@ h6{
 }
 
 .bar>a {
-    width: 80%;
+    width: 70%;
 }
 
 .volume {
@@ -475,7 +497,7 @@ h6{
 }
 
 .container-volume {
-    width: 40%;
+    width: 30%;
 }
 
 .control-volume {
@@ -530,7 +552,7 @@ h6{
 }
 
 .container-volume:hover .control-volume {
-    background-color: rgb(72, 184, 41);
+    background-color: var(--sp-green);
 }
 
 .container-volume:hover .ball {
@@ -538,7 +560,7 @@ h6{
 }
 
 .bar-player:hover .bar-song {
-    background-color: rgb(72, 184, 41);
+    background-color: var(--sp-green);
 }
 
 .bar-player:hover .ball {
@@ -606,7 +628,28 @@ h6{
     }
 
     .sidebar-mobile {
-        display: inline-block;
+        display: inherit;
+    }
+
+    .user-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .user-img>img {
+        width: 19px;
+    }
+
+    .left-footer {
+        gap:1px
+    }
+
+    .like {
+        margin-left: 0;
+    }
+
+    .player>a {
+        margin: 0.6rem;
     }
 
 
